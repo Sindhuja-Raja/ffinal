@@ -1,2 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Your Savings Goal</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="goal.css">
+</head>
+<body>
+    <div class="goal-container">
+        <button id="back-button" title="Back to Home"><i class="fa-solid fa-house"></i></button>
+        <h1>Savings Goal Tracker</h1>
+        
+        <div class="goal-input-section">
+            <label for="goal-input">Enter Your Savings Goal (Rs):</label>
+            <input type="number" id="goal-input" placeholder="Set a amount ">
+            <button id="set-goal-button">Set Goal</button>
+        </div>
 
-<h3>Enter the amount : <input id="g1"></h3>
+        <div class="goal-progress">
+            <h2>Goal Progress</h2>
+            <canvas id="goal-chart"></canvas>
+        </div>
+
+        <div class="goal-details">
+            <h2>Details</h2>
+            <p id="goal-message"></p>
+        </div>
+    </div>
+    <script src="goal.js"></script>
+</body>
+</html>
